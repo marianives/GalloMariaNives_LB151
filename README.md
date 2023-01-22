@@ -45,7 +45,6 @@ Ich werde dieses Projekt mit JSF (Java) programmieren
 | 4    |       Muss      | Funktional | Als Benutzer möchte ich meinen Namen eingeben können damit es in der Highscore-Liste angezeigt werden kann. |
 | 5    |       Muss      | Funktional | Als Benutzer möchte ich zu jeder Zeit mein Kontostand und meine Lebenspunkte sehen damit ich weiss wie gut/schlecht ich dran bin. |
 | 6    |       Muss      | Funktional | Als Benutzer möchte ich in der Rangliste den Rang, der Name des Spielers, der Zeitpunkt des Spiels, der Geldbetrag und die Anzahl Runden sehen, damit ich mich mit anderen Spielern vergleichen kann. |
-| 6    |       Muss      | Funktional | Als Benutzer möchte ich in der Rangliste den Rang, der Name des Spielers, der Zeitpunkt des Spiels, der Geldbetrag und die Anzahl Runden sehen, damit ich mich mit anderen Spielern vergleichen kann. |
 
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
@@ -54,8 +53,13 @@ Ich werde dieses Projekt mit JSF (Java) programmieren
 
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
+| 1.1  |Applikation muss gestartet sein| Als Admin anmelden|Übersicht anzeigen, damit man die einzelne Daten ändern kann|
+| 1.2  |Als Admin angemeldet sein|Kategorien anlegen, Frage zu Kategorien zuordnen können|Kategorie wird angelegt bzw. Fragen wurden zugeordnet.|
+| 1.3  |Als Admin angemeldet sein|Einträge in der Highscore löschen|Daten wurden entsprechend entfernt|
+| 1.4  |Applikation gestartet | Eingabe des Namens | Name wird abgespeichert für späteren Zeitpunkt.
+| 1.5  |Glückspiel gestartet | - | Kontostand znd Lebenspunkte ersichtlich |
+| 1.6  |Spiel wurde beendet | - |Highscore liste wird angezeigt |
+
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 

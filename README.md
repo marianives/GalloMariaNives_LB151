@@ -20,10 +20,10 @@ Das Spiel "Glücksrad" als Webapplikation mit JSF programmiert.
 
 ✍️ Beschreiben Sie, auf welchem Tier Sie die dynamischen Elemente der Anwendung unterbringen möchten:
 
-* Tier 1 (Presentation): View
-* Tier 2 (Webserver): ?
-* Tier 3 (Application Server): ?
-* Tier 4 (Dataserver): Datenbank
+* Tier 1 (Presentation): Kontostand anzeigen, Vokale kaufen
+* Tier 2 (Webserver): Eingaben, Anmelden
+* Tier 3 (Application Server): Überprüfung übereinstimmung gerateter Satz, Vokaleingabe überprüfen, Konsonanteingabe überprüfen,
+* Tier 4 (Dataserver): Abspeicherung Sätze, 
 
 # 2 Technologie
 

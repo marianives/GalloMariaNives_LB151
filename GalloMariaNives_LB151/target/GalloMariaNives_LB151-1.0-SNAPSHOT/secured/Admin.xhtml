@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+    <h:head>
+    </h:head>
+    <h:body>
+
+        <h1>ADMIN</h1>
+        <h:form>
+            <h:dataTable value="#{satz.satzListe}" var="o">
+
+                <h:column>
+
+                    <f:facet name="header">Satz nummer</f:facet>
+
+                    <h:outputText value="#{o.satzNr}" />
+
+                </h:column>
+
+                <h:column>
+
+                    <f:facet name="header">Satz</f:facet>
+
+                    <h:inputText value="#{o.satz}" size="20" rendered="#{o.editable}" />
+
+                    <h:outputText value="#{o.satz}" rendered="#{not o.editable}" />
+
+                </h:column>
+
+                <h:column>
+
+                    <f:facet name="header">Kategorie</f:facet>
+
+                    <h:inputText value="#{o.kategorie}" size="10" rendered="#{o.editable}" />
+
+                    <h:outputText value="#{o.kategorie}" rendered="#{not o.editable}" />
+
+                </h:column>
+                <h:column>
+
+                    <f:facet name="header">Action</f:facet>
+
+                    <h:commandLink value="Edit" action="#{satz.aendern(o)}" 
+                                   rendered="#{not o.editable}" />
+
+                </h:column>
+
+            </h:dataTable>
+
+            <h:commandButton value="Save Changes" action="#{satz.speichern}" />
+
+        </h:form>
+        
+        
+        <h:form>
+            <h:dataTable value="#{highscore.highscoreListe}" var="s">
+
+                <h:column>
+
+                    <f:facet name="header">Platz</f:facet>
+
+                    <h:outputText value="#{s.platz}" />
+
+                </h:column>
+
+                <h:column>
+
+                    <f:facet name="header">Name</f:facet>
+
+                    <h:inputText value="#{s.name}" size="20" rendered="#{s.editable}" />
+
+                    <h:outputText value="#{s.name}" rendered="#{not s.editable}" />
+
+                </h:column>
+
+                <h:column>
+
+                    <f:facet name="header">Punkte</f:facet>
+
+                    <h:outputText value="#{s.punkte}" />
+
+                </h:column>
+                <h:column>
+
+                    <f:facet name="header">Action</f:facet>
+
+                    <h:commandLink value="Edit" action="#{highscore.aendern(s)}" 
+                                   rendered="#{not s.editable}" />
+
+                </h:column>
+
+            </h:dataTable>
+
+            <h:commandButton value="Save Changes" action="#{highscore.speichern}" />
+
+        </h:form>
+    </h:body>
+</html>

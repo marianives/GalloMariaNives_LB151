@@ -112,21 +112,21 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 | US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
-| 1    |     ja    |  Home.xhtml                               |
+| 1    |     ja    |Home.xhtml                               |
 | 2    |     ja    |Spiel.xhtml & SpielBean.java -> drehen()|
-| 3    |     ja    |Spiel.xhtml & SpielBean.java ->|
-| 4    |     ja    |Spiel.xhtml & SpielBean.java ->|
-| 5    |     ja    |Spiel.xhtml & SpielBean.java ->|
-| 6    |     ja    |Spiel.xhtml & SpielBean.java ->|
-| 7    |     ja    |Spiel.xhtml & SpielBean.java ->|
-| 8    |     ja    |Spiel.xhtml & SpielBean.java ->|
-| 9    |     ja    |Spiel.xhtml & SpielBean.java ->|
-| 10   |     ja    |                                           |
-| 11   |     ja    |                                           |
-| 12   |     ja    |                                           |
-| 13   |     ja    |                                           |
-| 14   |     ja    |                                           |
-| 15   |     ja    |                                           |
+| 3    |     ja    |Spiel.xhtml & SpielBean.java -> SpielSatz() |
+| 4    |     ja    |Spiel.xhtml & SpielBean.java -> getSentence(), verdeckterSatz|
+| 5    |     ja    |Spiel.xhtml & SpielBean.java -> verifyChar()|
+| 6    |     ja    |Spiel.xhtml & SpielBean.java -> verifyChar()|
+| 7    |     ja    |Spiel.xhtml & SpielBean.java -> verifyChar()|
+| 8    |     ja    |Spiel.xhtml & SpielBean.java -> vokalKaufen()|
+| 9    |     ja    |Spiel.xhtml & SpielBean.java -> checkSentence()|
+| 10   |     ja    |Spiel.xhtml & SpielBean.java -> checkSentence()|
+| 11   |     ja    |Spiel.xhtml & SpielBean.java -> checkSentence(),vokalKaufen(),verifyChar()|
+| 12   |     ja    |Gewonnen.xhtml & ShopBean.java|
+| 13   |     ja    |Gewonnen.xhtml & ShopBean.java|
+| 14   |     ja    |Home.xhtml, FilterAdmin,java|
+| 15   |     ja    |Spiel.xhtml & SpielBean.java -> SpielSatz()|
 
 
 

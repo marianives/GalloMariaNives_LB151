@@ -72,7 +72,7 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 11.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht, Kontostand bei 0 |-|GameOver Seite mit Weg zu HighscoreListe wird angezeigt.|
 | D.1  |Spiel gewonnen, auf Shop-Seite | Gegenstände kaufen |Bei Kontostand 0 -> Nicht mehr möglich einzukaufen|
 | B.1  |Spiel gewonnen, auf Shop-Seite |Auf "High Score" klicken|High Score wird angezeigt.|
-| C.1  |Applikation gestartet, auf Home sein |Benutzername & Passwort eingeben |High Score Liste und Satzliste anzeigen.|
+| C14  |Applikation gestartet, auf Home sein |Benutzername & Passwort eingeben |High Score Liste und Satzliste anzeigen.|
 | 15.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz aufdecken|Kategorie wird mit Satz ausgegeben|
 
 
@@ -101,7 +101,7 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 11      |20-02-23|OK|
 | D      |20-02-23|OK|
 | B      |30-01-23|OK|
-|C      |30-01-23|OK|
+|14    |30-01-23|OK|
 | 15      |30-01-23|OK|
 
 
@@ -125,7 +125,7 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 11   |     ja    |Spiel.xhtml & SpielBean.java -> checkSentence(),vokalKaufen(),verifyChar()|
 | D   |     ja    |Gewonnen.xhtml & ShopBean.java|
 | B   |     ja    |Gewonnen.xhtml & ShopBean.java|
-| C   |     ja    |Home.xhtml, FilterAdmin,java|
+| 14 |     ja    |Home.xhtml, FilterAdmin,java|
 | 15   |     ja    |Spiel.xhtml & SpielBean.java -> SpielSatz()|
 
 

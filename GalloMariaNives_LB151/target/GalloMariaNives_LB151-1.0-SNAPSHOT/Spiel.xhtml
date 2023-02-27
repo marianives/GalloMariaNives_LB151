@@ -9,8 +9,8 @@
     <h:body>
         <h1>GLÜCKSRAD</h1>
         <h:form>
-            <h:outputLabel>Am Glücksrad drehen:</h:outputLabel>
-            <h:commandButton value="drehen" action="#{spielBean.SpielSatz()}" />
+            <h:outputLabel>Satz anzeigen</h:outputLabel>
+            <h:commandButton value="Show me!" action="#{spielBean.SpielSatz()}" />
 
             <h:outputText value="#{spielBean.getSentence()}" />
             <br/>
@@ -21,6 +21,12 @@
             <br/>
         </h:form>
 
+        <br/>
+        <h:form>
+            <h:outputLabel>Glücksrad drehen:</h:outputLabel>  
+            <h:outputLabel value="#{spielBean.gluecksZahl}"></h:outputLabel>  
+            <h:commandButton value="Drehen!" action="#{spielBean.drehen()}"></h:commandButton>
+        </h:form>
         <br/>
 
         <h:form>
@@ -39,7 +45,6 @@
 
         <h:form>
             <h:outputLabel>Vokal Kaufen:</h:outputLabel>
-            <h:inputText></h:inputText>
             <h:commandButton value="Kaufen" action="#{spielBean.vokalKaufen()}"></h:commandButton>
         </h:form>
 

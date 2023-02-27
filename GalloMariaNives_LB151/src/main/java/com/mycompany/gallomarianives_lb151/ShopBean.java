@@ -4,7 +4,6 @@
  */
 package com.mycompany.gallomarianives_lb151;
 
-import javax.ejb.Stateless;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 

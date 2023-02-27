@@ -13,6 +13,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Random;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 
@@ -21,12 +22,21 @@ import javax.faces.context.FacesContext;
 public class SpielBean {
 
     private char[] sentenceChars = {' '};
-    private char[] obscuredSentenceChars = {' '};
+    private char[] verdeckterSatz = {' '};
     private String category;
     char charInput = ' ';
     private int kontostand = 1000;
     String inputSentence = "";
     String name = "";
+    int gluecksZahl = 0;
+
+    public int getGluecksZahl() {
+        return gluecksZahl;
+    }
+
+    public void setGluecksZahl(int gluecksZahl) {
+        this.gluecksZahl = gluecksZahl;
+    }
 
     public char getCharInput() {
         return charInput;
@@ -51,13 +61,13 @@ public class SpielBean {
                 String sentence = result.getString("satz");
                 sentenceChars = sentence.toCharArray();
 
-                obscuredSentenceChars = new char[sentenceChars.length];
+                verdeckterSatz = new char[sentenceChars.length];
                 for (int i = 0; i < sentenceChars.length; i++) {
                     char c = sentenceChars[i];
                     if (Character.isLetter(c)) {
-                        obscuredSentenceChars[i] = '*';
+                        verdeckterSatz[i] = '*';
                     } else if (Character.isWhitespace(c) || !Character.isLetterOrDigit(c)) {
-                        obscuredSentenceChars[i] = c;
+                        verdeckterSatz[i] = c;
                     }
                 }
 
@@ -76,17 +86,23 @@ public class SpielBean {
         return sentenceChars;
     }
 
-    public char[] getObscuredSentenceChars() {
-        return obscuredSentenceChars;
+    public char[] getVerdeckterSatz() {
+        return verdeckterSatz;
     }
 
     public String getCategory() {
         return category;
     }
 
+    public void drehen() {
+        Random rnd = new Random();
+        int rndnr = rnd.nextInt(16);
+        gluecksZahl = rndnr * 100;
+    }
+
     public String getSentence() {
         String sentence = "";
-        for (char b : obscuredSentenceChars) {
+        for (char b : verdeckterSatz) {
             sentence = sentence + b;
         }
         return sentence;
@@ -108,16 +124,13 @@ public class SpielBean {
         boolean found = false;
         for (int i = 0; i < sentenceChars.length; i++) {
             if (Character.toLowerCase(charInput) == Character.toLowerCase(sentenceChars[i])) {
-                obscuredSentenceChars[i] = sentenceChars[i];
+                verdeckterSatz[i] = sentenceChars[i];
+                kontostand += gluecksZahl;
                 found = true;
-                if (found) {
-                    kontostand += 100;
-                    found = false;
-                }
             }
         }
         if (!found) {
-            kontostand -= 100;
+            kontostand -= 200;
             if (kontostand < 0 || kontostand == 0) {
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/lb151_gewinnspiel", "root", "");
                 String query = "INSERT INTO highscore (Score, Name) VALUES (?, ?)";
@@ -128,21 +141,34 @@ public class SpielBean {
                 ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
                 ec.redirect("GameOver.xhtml");
             }
+
         }
 
     }
 
-    public void vokalKaufen() {
-        for (int i = 0; i < sentenceChars.length; i++) {
-            char c = sentenceChars[i];
-            if (isVowel(c) && obscuredSentenceChars[i] == '*') {
-                int count = countOccurrences(sentenceChars, c);
-                for (int j = 0; j < count; j++) {
-                    int index = indexOf(sentenceChars, c, i);
-                    obscuredSentenceChars[index] = c;
-                    i = index;
+    public void vokalKaufen() throws SQLException, IOException {
+        if (kontostand < 400) {
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/lb151_gewinnspiel", "root", "");
+            String query = "INSERT INTO highscore (Score, Name) VALUES (?, ?)";
+            PreparedStatement statement = conn.prepareStatement(query);
+            statement.setString(1, String.valueOf(kontostand));
+            statement.setString(2, getName());
+            statement.executeUpdate();
+            ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+            ec.redirect("GameOver.xhtml");
+        } else {
+            kontostand -= 400;
+            for (int i = 0; i < sentenceChars.length; i++) {
+                char c = sentenceChars[i];
+                if (isVowel(c) && verdeckterSatz[i] == '*') {
+                    int count = countOccurrences(sentenceChars, c);
+                    for (int j = 0; j < count; j++) {
+                        int index = indexOf(sentenceChars, c, i);
+                        verdeckterSatz[index] = c;
+                        i = index;
+                    }
+                    return;
                 }
-                return;
             }
         }
     }
@@ -177,7 +203,7 @@ public class SpielBean {
     public void checkSentence() throws IOException, SQLException {
         boolean erraten = false;
         if (inputSentence.equals(String.valueOf(sentenceChars))) {
-            kontostand += 2000;
+            kontostand += gluecksZahl * 2;
             erraten = true;
         } else {
             kontostand -= 1000;

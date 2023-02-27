@@ -19,7 +19,7 @@ Das Spiel "Glücksrad" als Webapplikation mit JSF programmiert. Zusätzlich eine
 
 * Tier 1 (Presentation): Kontostand anzeigen, Vokale kaufen, Satz anzeigen, Satz raten, Shop, Highscore anzeigen, Sätzeliste anzeigen.
 * Tier 2 (Webserver): Eingaben, Anmelden, Formular übergabe.
-* Tier 3 (Application Server): Überprüfung übereinstimmung gerateter Satz, Vokaleingabe überprüfen, Buchstab Eingabe überprüfen, Datensätze aufrufen, Kontostand bei einkauf überprüfen, Filter.
+* Tier 3 (Application Server): Überprüfung übereinstimmung gerateter Satz, Vokaleingabe überprüfen, Buchstab Eingabe überprüfen, Datensätze aufrufen, Kontostand bei einkauf überprüfen, Filter, Glücksrad drehen.
 * Tier 4 (Dataserver): Abspeicherung Datensätze, Herausgabe Datensätze.
 
 # 2 Technologie
@@ -36,22 +36,28 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 | US-№ | Verbindlichkeit | Typ        | Beschreibung                       |
 | ---- | --------------- |    ----    | ---------------------------------- |
-| 1    |       Muss      | Funktional | Als ein Administrator möchte ich mich mit ein Password und Benutzername authentifizieren können, um neue Phrasen und Rätselwörteranlegen, ändern und löschen können. |
-| 2    |       Muss      | Funktional | Als Admin möchte ich neue Kategorien  anlegen  und  jedes  Wort  bzw.  jede  Frage einer Kategorie zuordnen können um das Spiel zu aktualisieren. |
-| 3    |       Muss      | Funktional | Als Admin möchte ich einzelne Einträge der Highscore-Liste löschen um Testergebnisse zu entfernen. |
-| 4    |       Muss      | Funktional | Als Benutzer möchte ich meinen Namen eingeben können damit es in der Highscore-Liste angezeigt werden kann. |
-| 5    |       Muss      | Funktional | Als Benutzer möchte ich zu jeder Zeit mein Kontostand und meine Lebenspunkte sehen damit ich weiss wie gut/schlecht ich dran bin. |
-| 6    |       Muss      | Funktional | Als Benutzer möchte ich in der Rangliste den Rang, der Name des Spielers, der Zeitpunkt des Spiels, der Geldbetrag und die Anzahl Runden sehen, damit ich mich mit anderen Spielern vergleichen kann. |
+| 1    |       Muss      | Funktional | Als Spieler möchte ich meinen Namen eingeben können, um es dann in der Highscore-Liste zu sehen. |
+| 2    |       Muss      | Funktional | Als Spieler möchte ich am Glücksrad drehen können, um eine Glückszahl zu bekommen.|
+| 3    |       Muss      | Funktional | Als Spieler möchte ich einen Satz aufdecken können, um diesen dann herausfinden zu können.|
+| 4    |       Muss      | Funktional | Als Spieler möchte ich den aufgedeckten Satz mit * sehen, damit ich diesen erraten kann.|
+| 5    |       Muss      | Funktional | Als Spieler möchte ich einen Buchstaben eingeben können, um herauszufinden, ob dieser im Satz enthalten ist.|
+| 6    |       Muss      | Funktional | Als Spieler möchte ich, wenn ich einen Buchstaben herausgefunden habe, für jeden Buchstabe die Glückszahl als Betrag auf mein Konto gutgeschrieben bekommen|
+| 7    |       Muss      | Funktional | Als Spieler möchte ich, dass wenn ich einen Buchstabe falsch gerate habe, einen abzug auf dem Konto von 200 bekomme.|
+| 8    |       Muss      | Funktional | Als Spieler möchte ich einen zufälligen Vokal kaufen können für 400 um den Satz einfacher zu finden.|
+| 9    |       Muss      | Funktional | Als Spieler möchte ich einen Satz eingeben können, um diesen Herauszufinden. Wenn ich ihn errate, bekomme ich 3000, sonst werden mir 1000 abgeschrieben.|
+| 10   |       Muss      | Funktional | Als Spieler möchte ich, wenn der Satz herausgefunden wurde Gewinnen, um dann im Shop etwas zu kaufen. |
+| 11   |       Muss      | Funktional | Als Spieler möchte ich, wenn der Kontostand bei 0 ist Verlieren, um dann die Highscore-Liste zu sehen.|
+| 12   |       Muss      | Funktional | Als Spieler möchte ich im Shop so lange einkaufen können, bis der Geldbetrag bei 0 ist.|
+| 13   |       Muss      | Funktional | Als Spieler möchte ich, wenn ich fertig im Shop bin, zur Highscore-Liste gehen, um mir diese anzuschauen.|
+| 14   |       Muss      | Funktional | Als Admin möchte ich mich anmedlen können, um die Highscore-Liste und Satzliste zu sehen.|
 
-
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
 
 # 4.2 Testfälle
 
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |Applikation muss gestartet sein| Als Admin anmelden|Übersicht anzeigen, damit man die einzelne Daten ändern kann|
-| 1.2  |Als Admin angemeldet sein|Kategorien anlegen, Frage zu Kategorien zuordnen können|Kategorie wird angelegt bzw. Fragen wurden zugeordnet.|
+| 1.1  |Applikation muss gestartet sein| Name eingeben, OK klicken|Spiel wird gestartet|
+| 2.1  |Spiel gestartet haben |Kategorien anlegen, Frage zu Kategorien zuordnen können|Kategorie wird angelegt bzw. Fragen wurden zugeordnet.|
 | 1.3  |Als Admin angemeldet sein|Einträge in der Highscore löschen|Daten wurden entsprechend entfernt|
 | 1.4  |Applikation gestartet | Eingabe des Namens | Name wird abgespeichert für späteren Zeitpunkt.
 | 1.5  |Glückspiel gestartet | - | Kontostand znd Lebenspunkte ersichtlich |

@@ -72,13 +72,6 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 13.1  |Spiel gewonnen, auf Shop-Seite |Auf "High Score" klicken|High Score wird angezeigt.|
 | 13.1  |Applikation gestartet, auf Home sein |Benutzername & Passwort eingeben |High Score Liste und Satzliste anzeigen.|
 
-
-
-
-
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
-
 # 5 Prototyp
 
 ![Screenshot 2023-01-15 204932](https://user-images.githubusercontent.com/100756109/212563751-488eab78-3c3f-4530-a9d9-388772ffbf03.jpg)
@@ -91,7 +84,21 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| ...        |       |              |
+| 1       |       |              |
+| 2       |       |              |
+| 3       |       |              |
+| 4       |       |              |
+| 5       |       |              |
+| 6       |       |              |
+| 7       |       |              |
+| 8       |       |              |
+| 9       |       |              |
+| 10      |       |              |
+| 11      |       |              |
+| 12      |       |              |
+| 13      |       |              |
+
+
 
 # 7 Projektdokumentation
 

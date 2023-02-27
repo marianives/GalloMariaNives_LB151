@@ -5,11 +5,11 @@ Gallo
 |  Datum | Version | Zusammenfassung                                              |
 | -----  | ------- | ------------------------------------------------------------ |
 |15-01-23| 0.0.1   | Ich habe die Dokumentation 1-5 gemacht.                      |
-|23-01-23| 0.0.2   |                                                              |
-|30-01-23| 0.0.3   |                                                              |
-|13-02-23| 0.0.4   |                                                              |
-|20-02-23| 0.0.5   |                                                              |
-|27-02-23| 1.0.0   |                                                              |
+|23-01-23| 0.0.2   |Theorie |
+|30-01-23| 0.0.3   |Interface, Datenbank verbindung|
+|13-02-23| 0.0.4   |Spiellogik angefangen|
+|20-02-23| 0.0.5   |Ganzes Projekt neu programmiert|
+|27-02-23| 1.0.0   |Dokumentation, Korrekturen|
 
 # 0 Ihr Projekt
 
@@ -84,19 +84,19 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| 1       |       |              |
-| 2       |       |              |
-| 3       |       |              |
-| 4       |       |              |
-| 5       |       |              |
-| 6       |       |              |
-| 7       |       |              |
-| 8       |       |              |
-| 9       |       |              |
-| 10      |       |              |
-| 11      |       |              |
-| 12      |       |              |
-| 13      |       |              |
+| 1       |23-01-23|OK|
+| 2       |20-02-23|OK|
+| 3       |20-02-23|OK|
+| 4       |20-02-23|OK|
+| 5       |20-02-23|OK|
+| 6       |20-02-23|OK|
+| 7       |20-02-23|OK|
+| 8       |20-02-23|OK|
+| 9       |20-02-23|OK|
+| 10      |20-02-23|OK|
+| 11      |20-02-23|OK|
+| 12      |20-02-23|OK|
+| 13      |30-01-23|OK|
 
 
 

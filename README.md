@@ -76,7 +76,7 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 # 5 Prototyp
 
-![Screenshot 2023-01-15 204932](https://user-images.githubusercontent.com/100756109/212563751-488eab78-3c3f-4530-a9d9-388772ffbf03.jpg)
+![Screenshot 2023-01-15 204932](https://user-images.githubusontent.com/100756109/212563751-488eab78-3c3f-4530-a9d9-388772ffbf03.jpg)
 
 
 

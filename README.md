@@ -32,8 +32,6 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 # 4.1 User Stories
 
-✍️ Formulieren Sie weitere, eigene Anforderungen und Testfälle, wie Sie Ihre Applikation erweitern möchten. Geben Sie diesen statt einer Nummer einen Buchstaben (`A`, `B`, etc.)
-
 | US-№ | Verbindlichkeit | Typ        | Beschreibung                       |
 | ---- | --------------- |    ----    | ---------------------------------- |
 | 1    |       Muss      | Funktional | Als Spieler möchte ich meinen Namen eingeben können, um es dann in der Highscore-Liste zu sehen. |
@@ -84,8 +82,6 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 # 6 Implementation
 
-✍️ Halten Sie fest, wann Sie welche User Story bearbeitet haben
-
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
 | 1       |23-01-23|OK|
@@ -103,8 +99,6 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | B      |30-01-23|OK|
 |14    |30-01-23|OK|
 | 15      |30-01-23|OK|
-
-
 
 
 
@@ -127,7 +121,6 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | B   |     ja    |Gewonnen.xhtml & ShopBean.java|
 | 14 |     ja    |Home.xhtml, FilterAdmin,java|
 | 15   |     ja    |Spiel.xhtml & SpielBean.java -> SpielSatz()|
-
 
 
 # 8 Testprotokoll
@@ -153,12 +146,10 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 15.1  |27-02.23|OK|MNG|
 
 
-
 Alle Tests sind postiv herausgekommen, ausser bei der Anmeldung vom Admin wird das Passwort & Benutzername nicht überprüft und im Shop wird der falsche kontostand angezeigt.
 
 # 9 `README.md`
-
-✍️ Beschreiben Sie ausführlich in einer README.md, wie Ihre Applikation gestartet und ausgeführt wird. Legen Sie eine geeignete Möglichkeit (Skript, Export, …) bei, Ihre Datenbank wiederherzustellen.
+.
 
 # 10 Allgemeines
 

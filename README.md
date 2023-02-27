@@ -5,29 +5,26 @@ Gallo
 |  Datum | Version | Zusammenfassung                                              |
 | -----  | ------- | ------------------------------------------------------------ |
 |15-01-23| 0.0.1   | Ich habe die Dokumentation 1-5 gemacht.                      |
-|        | 0.0.2   |                                                              |
-|        | 0.0.3   |                                                              |
-|        | 0.0.4   |                                                              |
-|        | 0.0.5   |                                                              |
-|        | 0.0.6   |                                                              |
-|        | 1.0.0   |                                                              |
+|23-01-23| 0.0.2   |                                                              |
+|30-01-23| 0.0.3   |                                                              |
+|13-02-23| 0.0.4   |                                                              |
+|20-02-23| 0.0.5   |                                                              |
+|27-02-23| 1.0.0   |                                                              |
 
 # 0 Ihr Projekt
 
-Das Spiel "Glücksrad" als Webapplikation mit JSF programmiert.
+Das Spiel "Glücksrad" als Webapplikation mit JSF programmiert. Zusätzlich eine Datenbank mit JDBC verbunden.
 
 # 1 Analyse
 
-✍️ Beschreiben Sie, auf welchem Tier Sie die dynamischen Elemente der Anwendung unterbringen möchten:
-
-* Tier 1 (Presentation): Kontostand anzeigen, Vokale kaufen
-* Tier 2 (Webserver): Eingaben, Anmelden
-* Tier 3 (Application Server): Überprüfung übereinstimmung gerateter Satz, Vokaleingabe überprüfen, Konsonanteingabe überprüfen,
-* Tier 4 (Dataserver): Abspeicherung Sätze, 
+* Tier 1 (Presentation): Kontostand anzeigen, Vokale kaufen, Satz anzeigen, Satz raten, Shop, Highscore anzeigen, Sätzeliste anzeigen.
+* Tier 2 (Webserver): Eingaben, Anmelden, Formular übergabe.
+* Tier 3 (Application Server): Überprüfung übereinstimmung gerateter Satz, Vokaleingabe überprüfen, Buchstab Eingabe überprüfen, Datensätze aufrufen, Kontostand bei einkauf überprüfen, Filter.
+* Tier 4 (Dataserver): Abspeicherung Datensätze, Herausgabe Datensätze.
 
 # 2 Technologie
 
-Ich werde dieses Projekt mit JSF (Java) programmieren
+Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenbank benutzen
 
 # 3 Datenbank
 

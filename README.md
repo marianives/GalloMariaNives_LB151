@@ -57,11 +57,18 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
 | 1.1  |Applikation muss gestartet sein| Name eingeben, OK klicken|Spiel wird gestartet|
-| 2.1  |Spiel gestartet haben |Kategorien anlegen, Frage zu Kategorien zuordnen können|Kategorie wird angelegt bzw. Fragen wurden zugeordnet.|
-| 1.3  |Als Admin angemeldet sein|Einträge in der Highscore löschen|Daten wurden entsprechend entfernt|
-| 1.4  |Applikation gestartet | Eingabe des Namens | Name wird abgespeichert für späteren Zeitpunkt.
-| 1.5  |Glückspiel gestartet | - | Kontostand znd Lebenspunkte ersichtlich |
-| 1.6  |Spiel wurde beendet | - |Highscore liste wird angezeigt |
+| 2.1  |Spiel gestartet haben | Auf "drehen" klicken |Eine Glückszahl wird angezeigt.|
+| 3.1  |Spiel gestartet haben|Auf "Show me" klicken|Ein Satz erscheint.|
+| 4.1  |Spiel gestartet haben |Auf "Show me" klicken| Satz wird mit * anstatt buchstaben angezeigt|
+| 5.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht|Buchstab bei "Buchstabe erraten" eingeben und auf Button klicken|Falls enthalten, wird dieser im Satz aufgedeckt, sonst nicht.|
+| 6.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Buchstabe bei "Buchstabe erraten" eingeben und auf Button klicken|der Buchstabe wird aufgedeckt im Satz, Kontostand wird erhöht um Glückszahl.|
+| 7.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Buchstabe bei "Buchstabe erraten" eingeben und auf Button klicken|der Buchstabe wird nicht aufgedeckt, Kontostand wird um 200 kleiner.|
+| 8.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Auf Vokal kaufen klicken|der Vokal wird aufgedeckt im Satz, Kontostand wird um 400 kleiner.|
+| 9.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Kontostand +3000|
+| 9.2  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls falsch -> Kontostand -1000|
+| 10.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Gewinnseite mit weg zu Highscore Liste und Shop wird angezeigt |
+| 11.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht, Kontostand bei 0 |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Gewinnseite mit weg zu Highscore Liste und Shop wird angezeigt |
+
 
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.

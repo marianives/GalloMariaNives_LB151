@@ -56,7 +56,7 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |Applikation muss gestartet sein| Name eingeben, OK klicken|Spiel wird gestartet|
+| 1.1  |Applikation muss gestartet sein, auf Home sein| Name eingeben, OK klicken|Spiel wird gestartet|
 | 2.1  |Spiel gestartet haben | Auf "drehen" klicken |Eine Glückszahl wird angezeigt.|
 | 3.1  |Spiel gestartet haben|Auf "Show me" klicken|Ein Satz erscheint.|
 | 4.1  |Spiel gestartet haben |Auf "Show me" klicken| Satz wird mit * anstatt buchstaben angezeigt|
@@ -67,7 +67,13 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 9.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Kontostand +3000|
 | 9.2  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls falsch -> Kontostand -1000|
 | 10.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Gewinnseite mit weg zu Highscore Liste und Shop wird angezeigt |
-| 11.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht, Kontostand bei 0 |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Gewinnseite mit weg zu Highscore Liste und Shop wird angezeigt |
+| 11.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht, Kontostand bei 0 |-|GameOver Seite mit Weg zu HighscoreListe wird angezeigt.|
+| 12.1  |Spiel gewonnen, auf Shop-Seite | Gegenstände kaufen |Bei Kontostand 0 -> Nicht mehr möglich einzukaufen|
+| 13.1  |Spiel gewonnen, auf Shop-Seite |Auf "High Score" klicken|High Score wird angezeigt.|
+| 13.1  |Applikation gestartet, auf Home sein |Benutzername & Passwort eingeben |High Score Liste und Satzliste anzeigen.|
+
+
+
 
 
 

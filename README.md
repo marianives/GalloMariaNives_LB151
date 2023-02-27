@@ -136,8 +136,23 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  |27-02.23|OK|MNG|
+| 2.1  |27-02.23|OK|MNG|
+| 3.1  |27-02.23|OK|MNG|
+| 4.1  |27-02.23|OK|MNG|
+| 5.1  |27-02.23|OK|MNG|
+| 6.1  |27-02.23|OK|MNG|
+| 7.1  |27-02.23|OK|MNG|
+| 8.1  |27-02.23|OK|MNG|
+| 9.1  |27-02.23|OK|MNG|
+| 10.1  |27-02.23|OK|MNG|
+| 11.1  |27-02.23|OK|MNG|
+| 12.1  |27-02.23|OK|MNG|
+| 13.1  |27-02.23|OK|MNG|
+| 14.1  |27-02.23|OK|MNG|
+| 15.1  |27-02.23|OK|MNG|
+
+
 
 Alle Tests sind postiv herausgekommen, ausser bei der Anmeldung vom Admin wird das Passwort & Benutzername nicht überprüft und im Shop wird der falsche kontostand angezeigt.
 

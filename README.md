@@ -139,7 +139,7 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 1.1  |       |          |        |
 | ...  |       |          |        |
 
-Alle Tests sind postiv herausgekommen, ausser bei der Anmeldung vom Admin wird das Passwort & Benutzername nicht überprüft.
+Alle Tests sind postiv herausgekommen, ausser bei der Anmeldung vom Admin wird das Passwort & Benutzername nicht überprüft und im Shop wird der falsche kontostand angezeigt.
 
 # 9 `README.md`
 

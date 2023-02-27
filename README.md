@@ -76,9 +76,6 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 # 5 Prototyp
 
-![Screenshot 2023-01-15 204932](https://user-images.githubusontent.com/100756109/212563751-488eab78-3c3f-4530-a9d9-388772ffbf03.jpg)
-
-
 
 # 6 Implementation
 
@@ -149,7 +146,7 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 Alle Tests sind postiv herausgekommen, ausser bei der Anmeldung vom Admin wird das Passwort & Benutzername nicht überprüft und im Shop wird der falsche kontostand angezeigt.
 
 # 9 `README.md`
-.
+https://youtu.be/bHodmdAt35s
 
 # 10 Allgemeines
 

@@ -10,15 +10,16 @@
 
         <h:form>
             Um das Spiel zu starten, gib deinen Namen ein und klicke Start!
-            <h:inputText value="Name"></h:inputText>
-            <h:commandButton value="OK"></h:commandButton>
+            <h:inputText value="#{spielBean.name}"></h:inputText>
+            <h:commandButton value="OK" action="Spiel.xhtml"></h:commandButton>
         </h:form>
+
 
         <h:form>
             Falls du ein Admin bist, gib dein Name und Password ein und klicke OK.
             <h:inputText value="Name"></h:inputText>
             <h:inputText value="Password"></h:inputText>
-            <h:commandButton value="OK"></h:commandButton>
+            <h:commandButton value="OK" action="/secured/Admin.xhtml"></h:commandButton>
         </h:form>
 
 

@@ -9,93 +9,33 @@
     <h:body>
 
         <h1>ADMIN</h1>
-        <h:form>
-            <h:dataTable value="#{satz.satzListe}" var="o">
 
-                <h:column>
+        <h:dataTable value="#{dataBean.getHighscoreData()}" var="row">
+            <h:column>
+                <f:facet name="header">Score</f:facet>
+                    #{row[0]}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Name</f:facet>
+                    #{row[1]}
+            </h:column>
 
-                    <f:facet name="header">Satz nummer</f:facet>
+        </h:dataTable>
 
-                    <h:outputText value="#{o.satzNr}" />
+        <h:dataTable value="#{dataBean.getSatzData()}" var="row">
+            <h:column>
+                <f:facet name="header">ID</f:facet>
+                    #{row[0]}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Satz</f:facet>
+                    #{row[1]}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Kategorie</f:facet>
+                    #{row[2]}
+            </h:column>
 
-                </h:column>
-
-                <h:column>
-
-                    <f:facet name="header">Satz</f:facet>
-
-                    <h:inputText value="#{o.satz}" size="20" rendered="#{o.editable}" />
-
-                    <h:outputText value="#{o.satz}" rendered="#{not o.editable}" />
-
-                </h:column>
-
-                <h:column>
-
-                    <f:facet name="header">Kategorie</f:facet>
-
-                    <h:inputText value="#{o.kategorie}" size="10" rendered="#{o.editable}" />
-
-                    <h:outputText value="#{o.kategorie}" rendered="#{not o.editable}" />
-
-                </h:column>
-                <h:column>
-
-                    <f:facet name="header">Action</f:facet>
-
-                    <h:commandLink value="Edit" action="#{satz.aendern(o)}" 
-                                   rendered="#{not o.editable}" />
-
-                </h:column>
-
-            </h:dataTable>
-
-            <h:commandButton value="Save Changes" action="#{satz.speichern}" />
-
-        </h:form>
-        
-        
-        <h:form>
-            <h:dataTable value="#{highscore.highscoreListe}" var="s">
-
-                <h:column>
-
-                    <f:facet name="header">Platz</f:facet>
-
-                    <h:outputText value="#{s.platz}" />
-
-                </h:column>
-
-                <h:column>
-
-                    <f:facet name="header">Name</f:facet>
-
-                    <h:inputText value="#{s.name}" size="20" rendered="#{s.editable}" />
-
-                    <h:outputText value="#{s.name}" rendered="#{not s.editable}" />
-
-                </h:column>
-
-                <h:column>
-
-                    <f:facet name="header">Punkte</f:facet>
-
-                    <h:outputText value="#{s.punkte}" />
-
-                </h:column>
-                <h:column>
-
-                    <f:facet name="header">Action</f:facet>
-
-                    <h:commandLink value="Edit" action="#{highscore.aendern(s)}" 
-                                   rendered="#{not s.editable}" />
-
-                </h:column>
-
-            </h:dataTable>
-
-            <h:commandButton value="Save Changes" action="#{highscore.speichern}" />
-
-        </h:form>
+        </h:dataTable>
     </h:body>
 </html>

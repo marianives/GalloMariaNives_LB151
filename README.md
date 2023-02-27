@@ -27,8 +27,7 @@ Das Spiel "Glücksrad" als Webapplikation mit JSF programmiert. Zusätzlich eine
 Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenbank benutzen
 
 # 3 Datenbank
-
-✍️ Wie steuern Sie Ihre Datenbank an? Wie ist das Interface aufgebaut? 
+Die datenbank wird mit Java gesteuert, mit Prepared Statements, welche die SQL dann ausführen
 
 # 4.1 User Stories
 
@@ -121,8 +120,6 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 
 # 8 Testprotokoll
-
-✍️ Fügen Sie hier den Link zu dem Video ein, welches den Testdurchlauf dokumentiert.
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |

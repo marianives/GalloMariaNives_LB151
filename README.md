@@ -45,10 +45,10 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 7    |       Muss      | Funktional | Als Spieler möchte ich, dass wenn ich einen Buchstabe falsch gerate habe, einen abzug auf dem Konto von 200 bekomme.|
 | 8    |       Muss      | Funktional | Als Spieler möchte ich einen zufälligen Vokal kaufen können für 400 um den Satz einfacher zu finden.|
 | 9    |       Muss      | Funktional | Als Spieler möchte ich einen Satz eingeben können, um diesen Herauszufinden. Wenn ich ihn errate, bekomme ich 3000, sonst werden mir 1000 abgeschrieben.|
-| 10   |       Muss      | Funktional | Als Spieler möchte ich, wenn der Satz herausgefunden wurde Gewinnen, um dann im Shop etwas zu kaufen. |
+| A   |       Muss      | Funktional | Als Spieler möchte ich, wenn der Satz herausgefunden wurde Gewinnen, um dann im Shop etwas zu kaufen. |
 | 11   |       Muss      | Funktional | Als Spieler möchte ich, wenn der Kontostand bei 0 ist Verlieren, um dann die Highscore-Liste zu sehen.|
-| 12   |       Muss      | Funktional | Als Spieler möchte ich im Shop so lange einkaufen können, bis der Geldbetrag bei 0 ist.|
-| 13   |       Muss      | Funktional | Als Spieler möchte ich, wenn ich fertig im Shop bin, zur Highscore-Liste gehen, um mir diese anzuschauen.|
+| B   |       Muss      | Funktional | Als Spieler möchte ich im Shop so lange einkaufen können, bis der Geldbetrag bei 0 ist.|
+| C  |       Muss      | Funktional | Als Spieler möchte ich, wenn ich fertig im Shop bin, zur Highscore-Liste gehen, um mir diese anzuschauen.|
 | 14   |       Muss      | Funktional | Als Admin möchte ich mich anmedlen können, um die Highscore-Liste und Satzliste zu sehen.|
 | 15   |       Muss      | Funktional | Als Spieler möchte ich die Kategorie vom Satz wissen, um einfacher herauszufinden|
 
@@ -68,11 +68,11 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 8.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Auf Vokal kaufen klicken|der Vokal wird aufgedeckt im Satz, Kontostand wird um 400 kleiner.|
 | 9.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Kontostand +3000|
 | 9.2  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls falsch -> Kontostand -1000|
-| 10.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Gewinnseite mit weg zu Highscore Liste und Shop wird angezeigt |
+| A.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz im eingabefeld eingeben und auf raten klicken|Falls richtig -> Gewinnseite mit weg zu Highscore Liste und Shop wird angezeigt |
 | 11.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht, Kontostand bei 0 |-|GameOver Seite mit Weg zu HighscoreListe wird angezeigt.|
-| 12.1  |Spiel gewonnen, auf Shop-Seite | Gegenstände kaufen |Bei Kontostand 0 -> Nicht mehr möglich einzukaufen|
-| 13.1  |Spiel gewonnen, auf Shop-Seite |Auf "High Score" klicken|High Score wird angezeigt.|
-| 14.1  |Applikation gestartet, auf Home sein |Benutzername & Passwort eingeben |High Score Liste und Satzliste anzeigen.|
+| D.1  |Spiel gewonnen, auf Shop-Seite | Gegenstände kaufen |Bei Kontostand 0 -> Nicht mehr möglich einzukaufen|
+| B.1  |Spiel gewonnen, auf Shop-Seite |Auf "High Score" klicken|High Score wird angezeigt.|
+| C.1  |Applikation gestartet, auf Home sein |Benutzername & Passwort eingeben |High Score Liste und Satzliste anzeigen.|
 | 15.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz aufdecken|Kategorie wird mit Satz ausgegeben|
 
 
@@ -97,11 +97,11 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 7       |20-02-23|OK|
 | 8       |20-02-23|OK|
 | 9       |20-02-23|OK|
-| 10      |20-02-23|OK|
+| A      |20-02-23|OK|
 | 11      |20-02-23|OK|
-| 12      |20-02-23|OK|
-| 13      |30-01-23|OK|
-| 14      |30-01-23|OK|
+| D      |20-02-23|OK|
+| B      |30-01-23|OK|
+|C      |30-01-23|OK|
 | 15      |30-01-23|OK|
 
 
@@ -121,11 +121,11 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 7    |     ja    |Spiel.xhtml & SpielBean.java -> verifyChar()|
 | 8    |     ja    |Spiel.xhtml & SpielBean.java -> vokalKaufen()|
 | 9    |     ja    |Spiel.xhtml & SpielBean.java -> checkSentence()|
-| 10   |     ja    |Spiel.xhtml & SpielBean.java -> checkSentence()|
+| A   |     ja    |Spiel.xhtml & SpielBean.java -> checkSentence()|
 | 11   |     ja    |Spiel.xhtml & SpielBean.java -> checkSentence(),vokalKaufen(),verifyChar()|
-| 12   |     ja    |Gewonnen.xhtml & ShopBean.java|
-| 13   |     ja    |Gewonnen.xhtml & ShopBean.java|
-| 14   |     ja    |Home.xhtml, FilterAdmin,java|
+| D   |     ja    |Gewonnen.xhtml & ShopBean.java|
+| B   |     ja    |Gewonnen.xhtml & ShopBean.java|
+| C   |     ja    |Home.xhtml, FilterAdmin,java|
 | 15   |     ja    |Spiel.xhtml & SpielBean.java -> SpielSatz()|
 
 

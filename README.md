@@ -50,6 +50,8 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 12   |       Muss      | Funktional | Als Spieler möchte ich im Shop so lange einkaufen können, bis der Geldbetrag bei 0 ist.|
 | 13   |       Muss      | Funktional | Als Spieler möchte ich, wenn ich fertig im Shop bin, zur Highscore-Liste gehen, um mir diese anzuschauen.|
 | 14   |       Muss      | Funktional | Als Admin möchte ich mich anmedlen können, um die Highscore-Liste und Satzliste zu sehen.|
+| 15   |       Muss      | Funktional | Als Spieler möchte ich die Kategorie vom Satz wissen, um einfacher herauszufinden|
+
 
 
 # 4.2 Testfälle
@@ -70,7 +72,9 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 11.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht, Kontostand bei 0 |-|GameOver Seite mit Weg zu HighscoreListe wird angezeigt.|
 | 12.1  |Spiel gewonnen, auf Shop-Seite | Gegenstände kaufen |Bei Kontostand 0 -> Nicht mehr möglich einzukaufen|
 | 13.1  |Spiel gewonnen, auf Shop-Seite |Auf "High Score" klicken|High Score wird angezeigt.|
-| 13.1  |Applikation gestartet, auf Home sein |Benutzername & Passwort eingeben |High Score Liste und Satzliste anzeigen.|
+| 14.1  |Applikation gestartet, auf Home sein |Benutzername & Passwort eingeben |High Score Liste und Satzliste anzeigen.|
+| 15.1  |Spiel gestartet, Satz aufgedeckt, Glücksrad gedreht |Satz aufdecken|Kategorie wird mit Satz ausgegeben|
+
 
 # 5 Prototyp
 
@@ -97,6 +101,10 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 11      |20-02-23|OK|
 | 12      |20-02-23|OK|
 | 13      |30-01-23|OK|
+| 14      |30-01-23|OK|
+| 15      |30-01-23|OK|
+
+
 
 
 
@@ -117,6 +125,9 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 11   |     ja    |                                           |
 | 12   |     ja    |                                           |
 | 13   |     ja    |                                           |
+| 14   |     ja    |                                           |
+| 15   |     ja    |                                           |
+
 
 
 # 8 Testprotokoll
@@ -136,6 +147,6 @@ Alle Tests sind postiv herausgekommen, ausser bei der Anmeldung vom Admin wird d
 
 # 10 Allgemeines
 
-- [ ] Ich habe die Rechtschreibung überprüft
-- [ ] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
-- [ ] Ich habe alle mit ✍️ markierten Teile ersetzt
+- [x] Ich habe die Rechtschreibung überprüft
+- [x] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
+- [x] Ich habe alle mit ✍️ markierten Teile ersetzt

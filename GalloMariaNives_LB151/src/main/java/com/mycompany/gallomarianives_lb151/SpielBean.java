@@ -203,7 +203,7 @@ public class SpielBean {
     public void checkSentence() throws IOException, SQLException {
         boolean erraten = false;
         if (inputSentence.equals(String.valueOf(sentenceChars))) {
-            kontostand += gluecksZahl * 2;
+            kontostand += (gluecksZahl * 2);
             erraten = true;
         } else {
             kontostand -= 1000;

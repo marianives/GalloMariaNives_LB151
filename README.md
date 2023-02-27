@@ -104,8 +104,20 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 
 | US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
-| 1    | ja / nein |                                           |
-| ...  |           |                                           |
+| 1    |     ja    |  Home.xhtml                               |
+| 2    |     ja    |Spiel.xhtml & SpielBean.java -> drehen()|
+| 3    |     ja    |Spiel.xhtml & SpielBean.java ->|
+| 4    |     ja    |Spiel.xhtml & SpielBean.java ->|
+| 5    |     ja    |Spiel.xhtml & SpielBean.java ->|
+| 6    |     ja    |Spiel.xhtml & SpielBean.java ->|
+| 7    |     ja    |Spiel.xhtml & SpielBean.java ->|
+| 8    |     ja    |Spiel.xhtml & SpielBean.java ->|
+| 9    |     ja    |Spiel.xhtml & SpielBean.java ->|
+| 10   |     ja    |                                           |
+| 11   |     ja    |                                           |
+| 12   |     ja    |                                           |
+| 13   |     ja    |                                           |
+
 
 # 8 Testprotokoll
 
@@ -116,7 +128,7 @@ Ich werde dieses Projekt mit JSF (Java) programmieren und JDBC für die Datenban
 | 1.1  |       |          |        |
 | ...  |       |          |        |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Alle Tests sind postiv herausgekommen, ausser bei der Anmeldung vom Admin wird das Passwort & Benutzername nicht überprüft.
 
 # 9 `README.md`
 
